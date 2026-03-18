@@ -12,26 +12,26 @@
 class Piz < Formula
   desc "Intelligent terminal command assistant - translate natural language to shell commands"
   homepage "https://github.com/AriesOxO/piz"
-  version "0.2.9"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/AriesOxO/piz/releases/download/v#{version}/piz-aarch64-apple-darwin.tar.gz"
-      sha256 "8e940da5ac2767d167f2d6932e9305ba8da3292aa3f836e61817bbee315371d4"
+      sha256 "78ca6653cb9503bb02a259ebbf6da7a3b3b3af5dc747e46d0407fff13d0684bc"
     else
       url "https://github.com/AriesOxO/piz/releases/download/v#{version}/piz-x86_64-apple-darwin.tar.gz"
-      sha256 "641b1b266de5ea303e330fea1a85f1ce28e1dded773eb8165dab1f1d78e7e8b0"
+      sha256 "adbec451f7f92ad43daf9de82e7d985ffe114af45d9a9877789a53f7a13dfc9e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/AriesOxO/piz/releases/download/v#{version}/piz-aarch64-linux-musl.tar.gz"
-      sha256 "d6a5a8f0983e5709d879bf1049ad1a17a78ca594a6562e8e6c0eb345fd8f9abb"
+      sha256 "d4fee87a2fe81159a1a53f77fb760052f8c9b44948537488af9cb15f0d698676"
     else
       url "https://github.com/AriesOxO/piz/releases/download/v#{version}/piz-x86_64-linux-musl.tar.gz"
-      sha256 "0bfac400303aabc406b73fde6f4d2be4c6af4775d510809ee44f505da51b2462"
+      sha256 "975dcd9e4d3ef28b38490bcd8c5590af57bd332b0fadba538700d52828c1395c"
     end
   end
 
